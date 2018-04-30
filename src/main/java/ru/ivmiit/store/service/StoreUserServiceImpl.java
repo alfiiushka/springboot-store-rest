@@ -37,14 +37,4 @@ public class StoreUserServiceImpl implements StoreUserService {
         storeUserRepository.save(storeUser);
     }
 
-    @Override
-    public List<StoreUserDTO> getAllStoreUsers() {
-        return storeUserRepository.findAll().stream().map(StoreUserDTO::new).collect(Collectors.toList());
-    }
-
-    @Override
-    public StoreUserDTO findById(Long id) {
-        StoreUser storeUser=storeUserRepository.findById(id).orElse(null);
-        return storeUser==null?null:new StoreUserDTO(storeUser);
-    }
 }

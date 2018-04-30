@@ -21,6 +21,28 @@ public class Product {
     @Column(name = "name")
     private String name;
 
+    @Column(name="price")
+    private Integer price;
+
+    @Column(name="in_stock")
+    private Boolean inStock;
+
+    public Integer getPrice() {
+        return price;
+    }
+
+    public void setPrice(Integer price) {
+        this.price = price;
+    }
+
+    public Boolean getInStock() {
+        return inStock;
+    }
+
+    public void setInStock(Boolean inStock) {
+        this.inStock = inStock;
+    }
+
     public Long getId() {
         return id;
     }

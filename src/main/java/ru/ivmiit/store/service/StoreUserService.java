@@ -7,9 +7,5 @@ import java.util.List;
 
 public interface StoreUserService {
 
-    List<StoreUserDTO> getAllStoreUsers();
-
-    StoreUserDTO findById(Long id);
-
     void saveStoreUser(StoreUserRegistrationForm storeUserRegistrationForm);
 }
