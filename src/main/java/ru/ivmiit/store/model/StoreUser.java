@@ -22,13 +22,13 @@ public class StoreUser {
     @Column(name = "password")
     private String password;
 
-    @Column(name="fio")
+    @Column(name = "fio")
     private String fio;
 
-    @Column(name="age")
+    @Column(name = "age")
     private Integer age;
 
-    @Column(name="i_like_tg")
+    @Column(name = "i_like_tg")
     private Boolean iLikeTelegram;
 
     @ManyToOne(cascade = CascadeType.ALL)

@@ -15,7 +15,7 @@ public class SignInController {
     private SignInService signInService;
 
     @PostMapping("/signIn")
-    public TokenDTO signIn(@RequestBody SignInForm signInForm){
+    public TokenDTO signIn(@RequestBody SignInForm signInForm) {
         return signInService.signIn(signInForm);
     }
 }

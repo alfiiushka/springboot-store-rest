@@ -5,7 +5,7 @@ import ru.ivmiit.store.model.Token;
 
 import java.util.Optional;
 
-public interface TokenRepository extends JpaRepository<Token,Long> {
+public interface TokenRepository extends JpaRepository<Token, Long> {
 
     Optional<Token> findByValue(String value);
 }

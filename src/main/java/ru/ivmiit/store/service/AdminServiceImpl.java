@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class AdminServiceImpl  implements AdminService{
+public class AdminServiceImpl implements AdminService {
 
     @Autowired
     private StoreUserRepository storeUserRepository;
@@ -28,8 +28,8 @@ public class AdminServiceImpl  implements AdminService{
 
     @Override
     public StoreUserDTO findById(Long id) {
-        StoreUser storeUser=storeUserRepository.findById(id).orElse(null);
-        return storeUser==null?null:new StoreUserDTO(storeUser);
+        StoreUser storeUser = storeUserRepository.findById(id).orElse(null);
+        return storeUser == null ? null : new StoreUserDTO(storeUser);
     }
 
     @Override

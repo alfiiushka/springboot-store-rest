@@ -3,15 +3,11 @@ package ru.ivmiit.store.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import ru.ivmiit.store.dto.StoreUserDTO;
 import ru.ivmiit.store.enums.RoleEnum;
 import ru.ivmiit.store.form.StoreUserRegistrationForm;
 import ru.ivmiit.store.model.StoreUser;
 import ru.ivmiit.store.repository.RoleRepository;
 import ru.ivmiit.store.repository.StoreUserRepository;
-
-import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
 public class StoreUserServiceImpl implements StoreUserService {

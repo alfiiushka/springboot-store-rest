@@ -21,10 +21,10 @@ public class Product {
     @Column(name = "name")
     private String name;
 
-    @Column(name="price")
+    @Column(name = "price")
     private Integer price;
 
-    @Column(name="in_stock")
+    @Column(name = "in_stock")
     private Boolean inStock;
 
     public Integer getPrice() {

@@ -11,10 +11,10 @@ public class TokenDTO {
 
     private String value;
 
-    public TokenDTO(Token token){
+    public TokenDTO(Token token) {
 
-        this.value=token.getValue();
-        this.storeUserFio= Optional.of(token).map(Token::getStoreUser).map(StoreUser::getFio).orElse(null);
+        this.value = token.getValue();
+        this.storeUserFio = Optional.of(token).map(Token::getStoreUser).map(StoreUser::getFio).orElse(null);
     }
 
     public String getStoreUserFio() {

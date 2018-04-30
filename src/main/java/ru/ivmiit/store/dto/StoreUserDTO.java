@@ -14,10 +14,10 @@ public class StoreUserDTO {
     private Integer age;
     private Boolean iLikeTelegram;
 
-    public StoreUserDTO(StoreUser storeUser){
-        this.fio=storeUser.getFio();
-        this.age=storeUser.getAge();
-        this.iLikeTelegram=storeUser.getiLikeTelegram();
+    public StoreUserDTO(StoreUser storeUser) {
+        this.fio = storeUser.getFio();
+        this.age = storeUser.getAge();
+        this.iLikeTelegram = storeUser.getiLikeTelegram();
     }
 
     public String getFio() {

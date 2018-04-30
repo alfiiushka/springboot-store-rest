@@ -14,7 +14,7 @@ public class StoreUserController {
     private StoreUserService storeUserService;
 
     @PostMapping("/save-store-user")
-    public void saveStoreUser(@RequestBody StoreUserRegistrationForm storeUserRegistrationForm){
+    public void saveStoreUser(@RequestBody StoreUserRegistrationForm storeUserRegistrationForm) {
         storeUserService.saveStoreUser(storeUserRegistrationForm);
     }
 }

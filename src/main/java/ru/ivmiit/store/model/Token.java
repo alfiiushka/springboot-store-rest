@@ -17,7 +17,7 @@ public class Token {
     private Long id;
 
 
-    @Column(name="value")
+    @Column(name = "value")
     private String value;
 
     @ManyToOne

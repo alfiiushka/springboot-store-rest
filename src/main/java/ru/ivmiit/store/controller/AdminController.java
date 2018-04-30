@@ -4,9 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import ru.ivmiit.store.dto.StoreUserDTO;
 import ru.ivmiit.store.dto.TokenDTO;
-import ru.ivmiit.store.form.StoreUserRegistrationForm;
 import ru.ivmiit.store.service.AdminService;
-import ru.ivmiit.store.service.StoreUserService;
 
 import java.util.List;
 

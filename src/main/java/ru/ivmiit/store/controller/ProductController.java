@@ -16,7 +16,7 @@ public class ProductController {
     private ProductService productService;
 
     @GetMapping("/products")
-    public List<ProductDTO> getProducts(){
+    public List<ProductDTO> getProducts() {
         return productService.getallProducts().stream().map(ProductDTO::new).collect(Collectors.toList());
     }
 }

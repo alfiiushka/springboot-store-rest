@@ -10,10 +10,10 @@ public class ProductDTO {
     private Integer price;
     private Boolean inStock;
 
-    public ProductDTO(Product product){
-        this.name=product.getName();
-        this.inStock=product.getInStock();
-        this.price=product.getPrice();
+    public ProductDTO(Product product) {
+        this.name = product.getName();
+        this.inStock = product.getInStock();
+        this.price = product.getPrice();
     }
 
     public String getName() {

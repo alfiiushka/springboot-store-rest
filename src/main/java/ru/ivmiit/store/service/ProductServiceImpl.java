@@ -8,10 +8,11 @@ import ru.ivmiit.store.repository.ProductRepository;
 import java.util.List;
 
 @Service
-public class ProductServiceImpl implements ProductService{
+public class ProductServiceImpl implements ProductService {
 
     @Autowired
     private ProductRepository productRepository;
+
     @Override
     public List<Product> getallProducts() {
         return productRepository.findAll();

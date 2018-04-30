@@ -28,16 +28,17 @@ public class SignInServiceImpl implements SignInService {
 
     @Override
     public TokenDTO signIn(SignInForm signInForm) {
-        Optional<StoreUser> storeUserOptional=storeUserRepository.findOneByLogin(signInForm.getLogin());
-        if(storeUserOptional.isPresent()){
-            StoreUser storeUser=storeUserOptional.get();
-            if(passwordEncoder.matches(signInForm.getPassword(),storeUser.getPassword())){
-                Token token=new Token();
+        Optional<StoreUser> storeUserOptional = storeUserRepository.findOneByLogin(signInForm.getLogin());
+        if (storeUserOptional.isPresent()) {
+            StoreUser storeUser = storeUserOptional.get();
+            if (passwordEncoder.matches(signInForm.getPassword(), storeUser.getPassword())) {
+                Token token = new Token();
                 token.setStoreUser(storeUser);
-                token.setValue(RandomStringUtils.random(10,true,true));
+                token.setValue(RandomStringUtils.random(10, true, true));
                 tokenRepository.save(token);
                 return new TokenDTO(token);
             }
-        } throw new IllegalArgumentException("Not found Store user");
+        }
+        throw new IllegalArgumentException("Not found Store user");
     }
 }
